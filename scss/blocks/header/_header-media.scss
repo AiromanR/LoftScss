@@ -1,0 +1,98 @@
+@media (min-width: 1850px) {
+   .header {
+      background: linear-gradient(180deg, #242B33 11.98%, rgba(45, 52, 60, 0.38) 51.04%, #242B33 92.19%) no-repeat,
+      lightgray 50% / cover no-repeat,
+      url('#{$path}header/header-bg.jpg') cover;
+      background-size: 100% 100%;
+   }
+}
+
+@include mediaTablet {
+   .header {
+
+
+      &__nav-btn {
+         display: flex;
+      }
+
+      &__list {
+         display: none;
+      }
+
+      &__text {
+         font-size: 2rem;
+      }
+
+      &__contacts {
+         flex-direction: column;
+         align-items: center;
+
+      }
+
+      &__number {
+         display: block;
+         position: unset;
+         margin-left: 0;
+         left: 0;
+         display: flex;
+         align-items: center;
+         width: auto;
+      }
+
+      &__adress {
+         display: block;
+         position: unset;
+         right: 0;
+         display: flex;
+         align-items: center;
+         font-size: 1.125rem;
+         margin-right: 0;
+         margin-bottom: 20px;
+      }
+
+      &__number-text {
+         margin-left: 8px;
+      }
+
+      &__adress-text {
+         margin-left: 8px;
+      }
+
+
+
+
+      &__top-row--mobile {
+         position: fixed;
+         background-color: $dark;
+         left: 0;
+         top: 0;
+         width: 100%;
+         height: 100%;
+         z-index: 90;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         justify-content: center;
+         transition: all .1s;
+         
+         & .header__nav-btn{
+            position: absolute;
+            top: 34px;
+            right: 15px;
+         }
+         & .header__list {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0;
+            margin: 50px 0;
+         }
+
+         & .header__item {
+            margin: 15px 0 15px 0;
+         }
+
+      }
+
+   }
+}

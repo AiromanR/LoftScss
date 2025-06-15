@@ -1,0 +1,52 @@
+%form-text {
+   display: block;
+   width: 100%;
+   height: 50px;
+   padding: 11px;
+   background-color: #ffffff33;
+   color: $white;
+   line-height: 27px;
+   font-size: .875rem;
+   transition: all .3s ease-in;
+
+   &::placeholder {
+      color: #bebebe;
+      text-align: center;
+   }
+   &:focus{
+      background-color: rgba(255, 255, 255, 0.25);
+   }
+}
+
+%form-button {
+   width: 100%;
+   height: 50px;
+   background-color: $accent;
+   color: $white;
+   font-weight: 700;
+   transition: all .3s;
+
+   &:hover {
+      background-color: saturate($color: $accent, $amount: 20%);
+   }
+}
+
+%form-desc{
+   width: 100%;
+   text-align: center;
+   color: #e7e7e7;
+   font-size: 13px;
+   line-height: 16px;
+   text-wrap: nowrap;
+}
+
+%decor{
+   display: block;
+   position: absolute;
+   color: #FFF;
+   font-family: $font-accent;
+   font-size: 25rem;
+   font-weight: 700;
+   line-height: normal;
+   opacity: 0.02;
+}

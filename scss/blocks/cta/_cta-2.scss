@@ -1,0 +1,13 @@
+.cta-2{
+   margin-bottom: 180px;
+   &__title{
+      margin-bottom: 49px;
+   }
+   &__form{
+      display: flex;
+      justify-content: space-between;
+   }
+   &__form-desc{
+      @extend %form-desc;
+   }
+}

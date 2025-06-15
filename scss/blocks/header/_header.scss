@@ -1,0 +1,134 @@
+.header {
+   display: flex;
+   height: 100vh;
+   flex-direction: column;
+   justify-content: space-between;
+   // background: url('#{$path}header/header-bg.jpg');
+   background: linear-gradient(180deg, #242B33 11.98%, rgba(45, 52, 60, 0.38) 51.04%, #242B33 92.19%) 0 0 / 100% no-repeat,
+   url('#{$path}header/header-bg.jpg') 0 0 / 100% no-repeat,
+   lightgray 50% / cover no-repeat;
+   background-position: center center;
+   padding-top: 34px;
+   padding-bottom: 75px;
+   background-size: auto;
+
+   &__top-row {
+      display: flex;
+      justify-content: space-between;
+      transition: all .1s;
+   }
+
+
+
+
+
+   &__nav {
+      font-size: .875rem;
+      display: flex;
+      align-items: center;
+   }
+
+   &__nav-btn {
+      display: none;
+   }
+
+   &__list {
+      display: flex;
+   }
+
+   &__link {
+      text-wrap: nowrap;
+   }
+
+   &__item {
+      margin-right: 40px;
+      cursor: pointer;
+   }
+
+   &__item:last-child {
+      margin-right: 0;
+   }
+
+   &__title-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+
+   &__text {
+      margin: 0 auto;
+      font-size: 3rem;
+      font-family: $font-accent;
+      font-weight: 700;
+      color: $accent;
+      max-width: 34.75rem;
+      text-align: center;
+      margin-bottom: 81px;
+
+      line-height: normal;
+   }
+
+   &__mouse {
+      background: url("#{$path}header/mouse.svg");
+      width: 40px;
+      height: 40px;
+   }
+
+   &__contacts {
+      position: relative;
+      display: flex;
+   }
+
+   &__adress {
+      display: inline-block;
+      position: absolute;
+      right: 50%;
+      display: flex;
+      align-items: center;
+      font-size: 1.125rem;
+      margin-right: 48px;
+   }
+
+   &__number {
+      display: inline-block;
+      position: relative;
+      margin-left: 50%;
+      left: 50px;
+      display: flex;
+      align-items: center;
+      width: calc(50% - 50px);
+   }
+
+   &__adress-img {
+      transform: translateY(5%);
+   }
+
+   &__number-text {
+      margin-left: 14px;
+      font-size: 1.125rem;
+
+   }
+
+   &__adress-text {
+      margin-left: 10px;
+      text-wrap: nowrap;
+   }
+
+   &__adress path,
+   &__number path {
+      transition: all .3s;
+   }
+
+   &__adress:hover path,
+   &__number:hover path {
+      fill: $accent;
+   }
+
+   &__nav-btn {
+      width: 40px;
+      height: 50px;
+      align-items: center;
+   }
+
+   
+}

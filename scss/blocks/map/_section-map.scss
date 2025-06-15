@@ -1,0 +1,23 @@
+.section-map {
+   position: relative;
+
+   &::after {
+      @extend %decor;
+      
+      content: "V";
+      right: calc(50% + 555px);
+      transform: translate(50%, 20%);
+      top: 0;
+      z-index: -1;
+   } 
+
+   padding: 180px 0;
+   &__title{
+      margin-bottom: 88px;
+   }
+}
+
+.map{
+   height: 358px;
+   background-color: #626262;
+}

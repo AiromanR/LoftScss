@@ -1,0 +1,48 @@
+.cta-2__form-item {
+   max-width: 255px;
+   flex-grow: 1;
+   margin-right: 30px;
+}
+
+@include mediaTablet {
+   .cta-2{
+      margin-bottom: 90px;
+      &__form{
+         display: grid;
+         grid-template-columns: 1fr 1fr;
+         justify-items: center;
+         
+      }
+      &__form-item{
+         margin: 0 15px 30px;
+         &:last-child{
+            margin-right: 15px;;
+         }
+      }
+   }
+   .cta__wrapper{
+      width: 540px;
+      margin: 0 auto;
+   }
+   .order--1{
+      order: -1;
+   }
+   .order0{
+      order: 0;
+   }
+}
+
+@include mediaSmTablet{
+   .cta-2{
+      &__form{
+         grid-template-columns: 1fr;
+      }
+      &__form-item{
+         max-width: unset;
+         width: 100%;
+      }
+   }
+   .cta__wrapper{
+      width: 100%;
+   }
+}

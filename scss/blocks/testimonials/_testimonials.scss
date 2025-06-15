@@ -1,0 +1,39 @@
+.testimonials {
+   padding: 120px 0;
+   position: relative;
+   overflow: hidden;
+
+   &::after {
+      @extend %decor;
+      content: "II";
+      left: calc(50% + 555px);
+      transform: translate(-50%, -5%);
+      top: 0;
+   } 
+
+   &__list {
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      max-width: 800px;
+      text-align: center;
+      font-family: $font-secondory;
+      font-size: 1.25rem;
+      line-height: 27px;
+   }
+
+   &__item {
+      text-wrap: nowrap;
+      max-width: 195px;
+      min-width: 15px;
+      margin-right: 70px;
+   }
+
+   &__item:last-child {
+      margin-right: 0;
+   }
+
+   &__img {
+      margin-bottom: 53px;
+   }
+}

@@ -1,0 +1,46 @@
+@include mediaTablet {
+   .testimonials {
+      &__text {
+         font-size: 1rem;
+      }
+      &__img {
+         width: 60px;
+         height: 60px;
+      }
+   }
+}
+
+
+@include mediaSmTablet {
+   .testimonials {
+      padding: 50px 0;
+      &__list {
+         display: grid;
+         grid-template-columns: 1fr 1fr;
+         justify-items: center;
+      }
+
+      &__item {
+         margin: 0 0 70px 0;
+      }
+
+   }
+}
+
+@include mediaSmPhone{
+   .testimonials {
+      &__list {
+         display: grid;
+         grid-template-columns: 1fr;
+         justify-items: center;
+      }
+      &__item {
+         margin: 0 0 45px 0;
+      }
+      &__img {
+         margin-bottom: 15px;
+      }
+   }
+}
+
+

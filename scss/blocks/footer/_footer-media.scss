@@ -1,0 +1,19 @@
+@include mediaTablet {
+   .footer {
+      &__wrapper {
+         display: grid;
+         grid-template-columns: 1fr 1fr;
+         justify-items: center;
+         gap: 40px 0px;
+      }
+   }
+}
+
+@media screen and (max-width:550px) {
+   .footer {
+      &__wrapper {
+         grid-template-columns: 1fr;
+         justify-items: start;
+      }
+   }
+}

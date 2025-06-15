@@ -1,0 +1,48 @@
+@include mediaTablet {
+   .appar{
+      &__title{
+         margin-bottom: 49px;
+      }
+      &__card-text{
+         font-size: 1.25rem;
+         left: 30px;
+         bottom: 25px;
+      }
+      &__card-img:hover::after{
+         top: 15px;
+         right: 15px;
+         bottom: 15px;
+         left: 15px;
+      }
+   }
+}
+
+@include mediaSmTablet {
+   .appar{
+      &__title{
+         text-align: center;
+      }
+      &__cards{
+         grid-template-columns: 1fr;
+         gap: 0px;
+      }
+      &__card-link{
+         margin: 30px;
+         
+      }
+   }
+}  
+
+@include mediaPhone {
+   .appar{
+      &__cards{
+         gap: 20px;
+      }
+      &__card-text{
+         font-size: 1rem;
+      }
+      &__card-link{
+         margin: 0 10px;
+      }
+   }
+} 
